@@ -1,0 +1,497 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+    background: linear-gradient(135deg, #007bff, #003366);
+    color: #fff;
+    border-bottom: 2px solid #007bff;
+    padding: 30px 0;
+    position: relative;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.header-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding: 0 20px;
+    animation: fadeInFromTop 1.2s ease-out;
+}
+
+.header-text {
+    max-width: 600px;
+    color: #fff;
+    text-align: center;
+    animation: fadeInFromBottom 1s ease-out;
+}
+
+.header-text h1 {
+    font-size: 3.3rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+.header-text span {
+    color: #ffe600;
+}
+
+.header-text p {
+    font-size: 1.1rem;
+    margin-bottom: 30px;
+    font-weight: 300;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+header button {
+    padding: 12px 35px;
+    font-size: 1.0rem;
+    background-color: #ffe600;
+    color: #003366;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}
+
+header button:hover {
+    background-color: #ffd700;
+    transform: scale(1.05);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Анимация для плавного появления контента */
+@keyframes fadeInFromTop {
+    from {
+        opacity: 0;
+        transform: translateY(-50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeInFromBottom {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.container {
+    max-width: 1200px;
+    margin: auto;
+    padding: 20px;
+}
+#about {
+    padding: 60px 20px;
+    background: #f9f9f9;
+    text-align: center;
+}
+
+
+#about h2 {
+    font-size: 2em;
+    color: #003366;
+
+    margin-bottom: 20px;
+    color: #333;
+}
+
+
+.authors {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 30px;
+}
+
+
+.author img {
+    border-radius: 50%;
+    width: 180px;
+    height: 180px;
+    object-fit: cover;
+    border: 3px solid #007bff;
+    transition: transform 0.3s ease;
+}
+
+
+.author img:hover {
+    transform: scale(1.1);
+}
+
+.author p {
+    margin-top: 10px;
+    font-size: 1.1em;
+    font-weight: bold;
+    color: #555;
+}
+
+.dubai-image {
+    position: relative;
+    max-width: 800px;
+    margin: 20px auto 0;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.dubai-image img {
+    width: 100%;
+    height: auto;
+    display: block;
+    transition: transform 0.5s ease;
+}
+
+.dubai-image:hover img {
+    transform: scale(1.05);
+}
+
+.dubai-caption {
+    position: absolute;
+    bottom: 10%;
+    left: 50%;
+    transform: translateX(-50%);
+    background: rgba(0, 0, 0, 0.6);
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 1.2em;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.dubai-text {
+    font-size: 1.5rem; /* Размер шрифта */
+    font-weight: bold; /* Жирный шрифт */
+    color: #003366; /* Темно-синий цвет, соответствующий общей стилистике */
+    text-transform: uppercase; /* Верхний регистр для выразительности */
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2); /* Легкая тень для выделения */
+    letter-spacing: 1px; /* Увеличение межбуквенного интервала */
+    margin: 20px 0; /* Отступы сверху и снизу */
+}
+
+.dubai-text strong {
+    color: #007bff; /* Синий для выделенного текста */
+    text-decoration: underline; /* Подчеркивание для выделенного текста */
+}
+
+.dubai-image:hover .dubai-caption {
+    opacity: 1;
+}
+
+
+/* Линия разделения */
+.separator {
+    width: 100%;
+    height: 2px;
+    background-color: #007bff; /* Цвет, который гармонирует с сайтом */
+    margin: 40px 0; /* Отступы сверху и снизу для разделения секций */
+}
+
+/* Основные стили */
+#modules {
+    padding: 40px 20px;
+    background: #f8f9fa;
+    background-color: #ffffff;
+
+}
+
+#modules h2 {
+    text-align: center;
+    font-size: 2.5em;
+    margin-bottom: 30px;
+    color: #333;
+}
+
+.module {
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    background: #fff;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.module:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+}
+
+.module h3 {
+    margin: 0;
+    padding: 15px 20px;
+    background: #007bff;
+    color: white;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: background 0.3s ease;
+}
+
+.module h3:hover {
+    background: #0056b3;
+}
+
+.module .arrow {
+    font-size: 1.2em;
+    transition: transform 0.3s ease;
+}
+
+.module .arrow.open {
+    transform: rotate(180deg);
+}
+
+.module p {
+    margin: 0;
+    padding: 15px 20px;
+    background: #f1f1f1;
+    font-weight: bold;
+}
+
+.module .content {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.5s ease, padding 0.5s ease;
+    padding: 0 20px;
+    background: #ffffff;
+}
+
+.module .content ul {
+    margin: 10px 0;
+    padding: 0;
+    list-style: none;
+}
+
+.module .content ul li {
+    position: relative;
+    padding-left: 25px;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.module .content ul li:before {
+    content: '•';
+    position: absolute;
+    left: 0;
+    color: #007bff;
+    font-size: 1.2em;
+    line-height: 1;
+}
+
+
+/* Стили для секции покупки */
+#purchase {
+    padding: 40px 20px;
+    background: linear-gradient(135deg, #007bff, #0056b3);
+    color: #fff;
+    text-align: center;
+    border-radius: 10px;
+    margin: 30px auto;
+    max-width: 600px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    animation: fadeInUp 1s ease-out;
+}
+
+#purchase h2 {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+    color: #fff;
+}
+
+#purchase p {
+    margin: 10px 0;
+    font-size: 1.2em;
+    color: #f1f1f1;
+}
+
+.pricing {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 20px 0;
+    gap: 15px;
+}
+
+.old-price {
+    text-decoration: line-through;
+    font-size: 1.5em;
+    color: #ffcccc;
+}
+
+.new-price {
+    font-size: 2em;
+    font-weight: bold;
+    color: #ffe600;
+}
+
+.discount {
+    font-size: 1.2em;
+    font-weight: bold;
+    color: #ffffff;
+    background: #ff4747;
+    border-radius: 5px;
+    padding: 5px 10px;
+    animation: pulse 1.5s infinite;
+}
+
+.btn-buy {
+    margin-top: 20px;
+    padding: 15px 30px;
+    font-size: 1.2em;
+    font-weight: bold;
+    color: #007bff;
+    background: #ffffff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: transform 0.3s, box-shadow 0.3s, background 0.3s;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    position: relative;
+    overflow: hidden;
+}
+
+/* Анимация при наведении */
+.btn-buy:hover {
+    transform: scale(1.1);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+    background: #ffffff;
+}
+
+/* Пульсирующий эффект */
+@keyframes pulse {
+    0%, 100% {
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+    50% {
+        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    }
+}
+
+.btn-buy {
+    animation: pulse 2s infinite;
+}
+
+/* Эффект волны при клике */
+.btn-buy::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 0;
+    height: 0;
+    background: rgba(255, 255, 255, 0.5);
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+    transition: width 0.4s ease, height 0.4s ease, opacity 0.8s ease;
+    z-index: 1;
+}
+
+.btn-buy:active::after {
+    width: 300px;
+    height: 300px;
+    opacity: 0;
+}
+
+
+@keyframes pulse {
+    0%, 100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+    50% {
+        transform: scale(1.1);
+        opacity: 0.8;
+    }
+}
+
+
+/*Футер */
+footer {
+    background: linear-gradient(135deg, #002b5e, #001a3d);
+    color: #fff;
+    padding: 40px 20px;
+    text-align: center;
+    border-radius: 20px 20px 0 0;
+    margin-top: 30px;
+    box-shadow: 0 -4px 10px rgba(0, 0, 0, 0.3);
+    animation: fadeInUpFooter 1s ease-out;
+    position: relative;
+}
+
+footer p {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+    color: #b3c7e6;
+}
+
+footer .socials {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+footer .socials a {
+    color: #ffe600;
+    font-size: 1.1em;
+    font-weight: bold;
+    text-decoration: none;
+    padding: 8px 16px;
+    border: 2px solid #ffe600;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+}
+
+footer .socials a:hover {
+    color: #002b5e;
+    background: #ffe600;
+    transform: scale(1.1);
+    box-shadow: 0 4px 8px rgba(255, 230, 0, 0.5);
+}
+
+/* Добавление декоративного элемента сверху футера */
+footer::before {
+    content: "";
+    position: absolute;
+    top: -20px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80px;
+    height: 6px;
+    background: #ffe600;
+    border-radius: 10px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+}
+
+/* Анимация */
+@keyframes fadeInUpFooter {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
