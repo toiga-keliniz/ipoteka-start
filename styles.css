@@ -126,30 +126,38 @@ header button:hover {
 
 .authors {
     display: flex;
-    justify-content: space-around;
+    justify-content: center; /* Элементы выравниваются по центру */
+    flex-wrap: wrap; /* Перенос элементов на новую строку при нехватке места */
+    gap: 20px; /* Равномерное расстояние между элементами */
     margin-bottom: 30px;
+    padding: 0; /* Убираем внутренние отступы */
+    max-width: 100%; /* Убедитесь, что контейнер не выходит за пределы экрана */
+    box-sizing: border-box; /* Учитываем границы и padding в ширине */
 }
 
+.author {
+    text-align: center; /* Центрируем содержимое */
+}
 
 .author img {
-    border-radius: 50%;
+    border-radius: 50%; /* Скругление */
     width: 180px;
     height: 180px;
-    object-fit: cover;
-    border: 3px solid #007bff;
+    object-fit: cover; /* Обеспечиваем пропорции */
+    border: 3px solid #007bff; /* Цвет обводки */
     transition: transform 0.3s ease;
 }
 
-
 .author img:hover {
-    transform: scale(1.1);
+    transform: scale(1.1); /* Увеличение при наведении */
 }
 
 .author p {
-    margin-top: 10px;
-    font-size: 1.1em;
-    font-weight: bold;
-    color: #555;
+    margin-top: 10px; /* Отступ сверху */
+    font-size: 1.1em; /* Размер шрифта */
+    font-weight: bold; /* Жирный шрифт */
+    color: #555; /* Цвет текста */
+    line-height: 1.4; /* Улучшение читаемости */
 }
 
 .dubai-image {
