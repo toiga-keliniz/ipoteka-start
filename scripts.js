@@ -23,10 +23,12 @@ function toggleContent(element) {
 
 }
 
-function buyCourse() {
+function buyCourse() { 
     alert("Сіз курсты сатып алуға өтінім жасадыңыз!");
-    // Здесь можно добавить логику для перенаправления на страницу оплаты.
+    // Перенаправление на страницу оплаты
+    window.location.href = "https://pay.kaspi.kz/pay/eczp15ba";
 }
+
 
 function scrollToContent() {
     // Находим элемент по ID
