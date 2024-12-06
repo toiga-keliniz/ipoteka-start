@@ -141,8 +141,8 @@ header button:hover {
 
 .author img {
     border-radius: 50%; /* Скругление */
-    width: 150px;
-    height: 150px;
+    width: 200px;
+    height: 200px;
     object-fit: cover; /* Обеспечиваем пропорции */
     border: 3px solid #007bff; /* Цвет обводки */
     transition: transform 0.3s ease;
